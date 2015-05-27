@@ -723,6 +723,10 @@ Coin = function () {
               5,  0,
               0, -5]);
 
+  this.color = 'yellow';
+  this.solid = true;
+  this.visible = true;
+
   this.collidesWith = ["ship"];
 
   this.newPosition = function () {
@@ -747,6 +751,8 @@ Coin = function () {
     this.newPosition();
     this.newValue();
   }
+
+    //this.color = 'yellow';
 
 }
 Coin.prototype = new Sprite();
